@@ -1,0 +1,84 @@
+
+body {
+ 
+}
+table{
+    
+}
+
+/*.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 2px;
+  background-color: #fff;
+  color: #444;
+}*/
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+    grid-auto-rows: 10rem;
+    grid-gap: 2px;
+    background-color: #fff;
+    color: #444;
+}
+
+#b {
+    
+}
+
+.btn {
+    
+}
+/* ----- lottory CSS 
+
+.divContainer div{
+    float left;
+}
+
+
+.clickBtn{
+    height:100px;
+    width:200px;
+    border-radius: 25px;
+    border: solid 2px red;
+    font-size: 150%;
+    color: red;
+    
+    
+}
+
+.clickBtn:hover{
+    background: #444;
+}
+
+.num{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-right:10px;
+    background:green;
+}
+
+.nums{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-right:10px;
+    background:green;
+} ------- */

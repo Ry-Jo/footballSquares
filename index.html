@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Football Squares</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery/jquery.js" type="text/javascript"></script>
+    <!--<link rel="stylesheet" href="css/table.css">
+    <script  type="text/javascript" src="tablesNumGen.js"></script>-->
+</head>
+<body>
+    <style>
+        
+        
+    </style>
+    
+<input id="btn" class="clickBtn" type="button" value="SQUARES RESET" onClick="visitorCol(), visitorRow();">
+ 
+    <br>
+    <br>
+    <br>
+
+<!--- ORIGINAL FORM
+    
+    <form>
+<div>
+    <label for="name">names</label>
+    <input type="text" id="name" placeholder="Name"/>
+</div>
+
+<div>
+        <label for="paid">Paid</label>
+        <input type="text" id="paid" placeholder="Paid"/>
+    </div>
+
+<div>
+    <button id="btn">Click to Add</button>
+</div>
+
+<div id="msg">
+     <pre></pre>   
+</div>
+
+</form> 
+
+END ORIGINAL FORM--->  
+
+<!--<button onClick="">try this</button>-->
+    
+<!--<div>
+  
+    <div class="box" id="display0"></div>
+    <div class="box" id="display1"></div>
+    <div class="box" id="display2"></div>
+    <div class="box" id="display3"></div>
+    <div class="box" id="display4"></div>
+    <div class="box" id="display5"></div>
+    <div class="box" id="display6"></div>
+    <div class="box" id="display7"></div>
+    <div class="box" id="display8"></div>
+    <div class="box" id="display9"></div>
+ </div>  
+       
+<div>
+  
+    <div class="box" id="displayColumn0"></div>
+    <div class="box" id="displayColumn1"></div>
+    <div class="box" id="displayColumn2"></div>
+    <div class="box" id="displayColumn3"></div>
+    <div class="box" id="displayColumn4"></div>
+    <div class="box" id="displayColumn5"></div>
+    <div class="box" id="displayColumn6"></div>
+    <div class="box" id="displayColumn7"></div>
+    <div class="box" id="displayColumn8"></div>
+    <div class="box" id="displayColumn9"></div>
+ </div> -->     
+
+<h2 style="text-align:center;">Home</h2>
+    
+<!--<h2 style=" writing-mode: vertical-rl; text-orientation: upright; float:left;">Visitors</h2>-->
+
+<div style="position:absolute; width: 80%; padding: 0 20px 0 20px;">   
+<table style="width: 60%; height:60%;">
+
+<tr>
+<td class="box">Squares</td>
+<td class="box" id="display0">-</td>
+<td class="box" id="display1">-</td>
+<td class="box" id="display2">-</td>
+<td class="box" id="display3">-</td>
+<td class="box" id="display4">-</td>
+<td class="box" id="display5">-</td>
+<td class="box" id="display6">-</td>
+<td class="box" id="display7">-</td>
+<td class="box" id="display8">-</td>
+<td class="box" id="display9">-</td>
+</tr>
+    
+<tr >
+<td class="box" id="displayColumn0">-</td>
+<td > <form>
+        <div>
+            <label for="name">names</label>
+            <input type="text" id="name" placeholder="Name"/>
+        </div>
+        
+        <div>
+            <label for="paid">Paid</label>
+            <input type="text" id="paid" placeholder="Paid"/>
+        </div>
+        <div>
+            <button id="btn">Click to Add</button>
+        </div>
+        <div id="msg">
+             <pre></pre>   
+        </div>
+        </form> 
+    </td>
+    
+    <td ><form id="myForm"><input type="text" id="fname"/></form> 
+        <p id="message"><br></p>
+    <button type="button" onClick="changeText()">Submit</button>
+    <button type="button" onClick="clearText()">Clear</button>   
+    </td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr> 
+
+<tr>
+<td class="box" id="displayColumn1">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn2">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn3">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn4">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn5">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn6">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn7">-</td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn8">-</td>
+<td ><input class="" type="" value="" onClick="outputname()"/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+<tr>
+<td class="box" id="displayColumn9">-</td>
+<td ><input id="name"/></td>
+<td id="name"><input /></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+<td ><input/></td>
+</tr>
+
+</table>
+</div>  
+    <script>
+        
+        
+        /* --------- Random Number Program --------- */
+        
+        
+        function visitorCol(){
+            var colNums = [];
+            //random number from 0 - 20
+            for(var i = 0; i < 10; i++){
+                var rand = Math.floor(Math.random()*10);
+                
+                if(colNums.indexOf(rand) == -1){
+                    colNums.push(rand);
+                    document.getElementById("display" + i).innerHTML = colNums[i];
+                }else{
+                    i--;
+                }
+            }
+        }
+        
+        
+         function visitorRow(){
+            var rowNums = [];
+            //random number from 0 - 20
+            for(var i = 0; i < 10; i++){
+                var rand = Math.floor(Math.random()*10);
+                
+                if(rowNums.indexOf(rand) == -1){
+                    rowNums.push(rand);
+                    document.getElementById("displayColumn" + i).innerHTML = rowNums[i];
+                }else{
+                    i--;
+                }
+            }
+        }
+        
+        
+        /* --------- Enter Name 
+        
+        function outputname(){
+            var x,y, name, a, b, answer;
+            x = document.getElementById("form1");
+            y = x.elements["name"].value;
+            document.getElementById("name").innerHTML= "Hello" + y + "<br>";
+            document.getElementById("name").innerHTML += y + "add something here";
+        }--------- */
+        
+
+
+
+/*--------- STORE VALUE INTO DATABASE -----------*/
+
+        let names = [];
+
+        const addInfo = (ev) => {
+            ev.preventDefault();
+            let info ={
+                id: Date.now(),
+                name: document.getElementById('name').value,
+                paid: document.getElementById('paid').value
+            }
+            names.push(info);
+            document.forms[0].reset();
+
+            console.warn('added', {names});
+            let pre = document.querySelector('#msg pre');
+            pre.textContent = '/n' + JSON.stringify(names, '/t', 2);
+        }
+
+        localStorage.setItem('myInfoList', JSON.stringify(names))
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btn').addEventListener('click', addInfo);
+        });
+
+        
+        /* -----------Enter Persons Name------------- */
+        function changeText(){
+            var firstName;
+            firstName = document.getElementById("fname").value;
+            document.getElementById("message").innerHTML=(firstName);
+        }
+        function clearText(){
+            document.getElementById("message").innerHTML=("<br>");
+            document.getElementById("fname").value="";
+        }
+    </script>
+        
+
+</body>
+    <footer>    </footer>
+</html>
+    
+
